@@ -1,0 +1,19 @@
+<section class="resume-section" id="about">
+  <div class="resume-section-content">
+    <h1 class="mb-0">
+      {{users.name}}
+      <span class="text-primary">{{users.surname}}</span>
+    </h1>
+    <div class="subheading mb-5">
+      phone number: {{users.phone}} <br>
+      e-mail: <a href="mailto:{{users.mail}}">{{users.mail}}</a>
+    </div>
+    <p class="lead mb-5">
+      {{users.about}}
+    </p>
+    <div class="social-icons">
+      <a *ngFor="let social of socials" class="social-icon" href="{{social.link}}"><i class="fab fa-{{social.name}}"></i></a>
+    </div>
+  </div>
+</section>
+<hr class="m-0" />
